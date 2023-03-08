@@ -7,21 +7,19 @@ function ChatBox() {
     // eslint-disable-next-line no-unused-vars
     const auth = getAuth()
     const firebase = useChatContext();
-   // const { uid } = auth.currentUser;
     const [userData, setUserData] = useState([]);
     const [msg, setMsg] = useState({ message: '' });
-    const [userId , setUserId] = useState()
-   
+    const [userId, setUserId] = useState()
+
     const db = getDatabase();
     const x = async (e) => {
         e.preventDefault();
-       
+
         let chatRef = ref(db, 'posts');
         const newPostRef = push(chatRef);
-       await set(newPostRef, {
+        await set(newPostRef, {
             msg: msg,
-            email:firebase.item
-            // uid
+            email: firebase.item
         });
         console.log(newPostRef)
         setMsg({ message: '' })
@@ -49,11 +47,11 @@ function ChatBox() {
                         </div>
                     </div>
                     <div className='second'>
-                        <div className='user_Option'>                      
+                        <div className='user_Option'>
                             <i class="fa fa-video-camera" aria-hidden="true"></i>
                             <i class="fa fa-phone" aria-hidden="true"></i>
                             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                            
+
                         </div>
                     </div>
                 </div>
