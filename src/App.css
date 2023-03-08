@@ -1,0 +1,314 @@
+/* signup form */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: radial-gradient(#ddd6f3, #faaca8);
+}
+
+.signupContainer {
+  background-color: white;
+  height: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.userName {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+input {
+  padding: 0.3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.signup_route {
+  margin: 0.6rem;
+}
+
+.signup-btn {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.4rem;
+  border: none;
+  color: white;
+  background-color: #00aeff;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background: #239fe7;
+}
+
+.chatbox {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main {
+  width: 60vw;
+  height: 80vh;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.chatbox_navbar {
+  background-color: rgb(26 122 26);
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+img {
+  border-radius: 50%;
+  width: 3vw;
+  height: 5vh;
+  background-color: black;
+  color: white;
+}
+
+.user_name {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.user_Option {
+  display: flex;
+  align-items: center;
+}
+
+.second i {
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+span {
+  font-weight: 300;
+  text-align: start;
+  color: yellow;
+
+}
+
+.status {
+  font-size: 2rem;
+  color: white;
+  font-weight: 300;
+  padding: 0.3rem;
+}
+
+.chatfield {
+  position: absolute;
+  bottom: 44px;
+  margin-top: 10px;
+}
+
+.input_field {
+  width: 54vw;
+  height: 2.5rem;
+  margin-bottom: 2rem;
+  margin-left: 20px;
+}
+
+.btn {
+  width: 50px;
+  margin: -7px;
+  height: 2.5rem;
+}
+
+.chat_messagr_field {
+  height: 408px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chat_message {
+  border: 2px solid black;
+  width: 150px;
+  text-align: justify;
+  background-color: rgb(141, 138, 138);
+  color: white;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 0px 22px 22px 22px;
+}
+
+.message {
+  font-size: 2rem;
+  border: 2px solid rgb(94, 94, 94);
+  border-radius: 0px 22px 22px 22px;
+  background-color: rgb(141, 138, 138);
+  padding: 6px;
+  text-align: end;
+  width: 280px;
+}
+
+.msgs {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 414px;
+}
+
+.sent {
+  background-color: #395dff;
+  color: white;
+  float: right;
+}
+
+.text {
+  margin-top: -4px;
+}
+
+.received {
+  border: 1px solid lightgray;
+  background-color: #bbb7b7;
+  color: white;
+}
+
+.msg {
+  display: flex;
+  padding: 20px 10px 10px 20px;
+  margin: 10px;
+  width: 200px;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 0 0 10px rgb(164, 164, 164);
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+ 
+.signupContainer {
+    background-color: white;
+    height: 58%;
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+}
+  .first {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 3vw;
+    height: 5vh;
+
+  }
+
+  .user_name {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .name {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .status {
+    font-size: 1rem;
+    color: white;
+    font-weight: 200;
+    padding: 0.3rem;
+    margin-left: -30px;
+  }
+
+  .user_Option {
+    display: flex;
+  }
+
+  .chatfield {
+    position: absolute;
+    bottom: 44px;
+    margin-top: 10px;
+    margin-left: -20px;
+  }
+
+  .input_field {
+    width: 247px;
+    height: 2.5rem;
+    margin-bottom: 19px;
+  }
+
+  .btn {
+    width: 41px;
+    margin: -8px;
+    height: 43px;
+  }
+
+  .msgs {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 359px;
+  }
+
+  .msg {
+    display: flex;
+    padding: 20px 10px 10px 20px;
+    margin: 8px;
+    width: 160px;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0 0 10px rgb(164, 164, 164);
+    align-items: center;
+  }
+
+  .sent {
+    background-color: #395dff;
+    color: white;
+    float: right;
+  }
+
+  .received {
+    border: 1px solid lightgray;
+    background-color: #bbb7b7;
+    text-align: start;
+    color: white;
+  }
+}
